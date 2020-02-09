@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     filename: "js/[name].js",
-    path: path.resolve(process.cwd(), "dist"),
+    path: path.resolve(process.cwd(), "public"),
     publicPath: "/"
   },
   devtool: "cheap-module-eval-source-map",

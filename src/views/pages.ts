@@ -6,7 +6,7 @@ const html = ({ header }: { header: string }) => `
     <body style="margin:0">
       <div id="header">${header}</div>
     </body>
-    <script src="js/counter.js" defer></script>
+    <script src="./public/js/header.js" defer></script>
   </html>
 `;
 

@@ -6,6 +6,7 @@ import { apiRoutes } from "./api/controllers";
 export const createApp: (config: string) => e.Express = config => {
   const app: Express = e();
   // Setup Views
+  app.use("/public" ,e.static("public"));
   app.use("/", viewRoutes);
 
   // Setup WebApi
