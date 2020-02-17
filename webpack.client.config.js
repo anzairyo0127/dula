@@ -10,9 +10,9 @@ module.exports = {
     path: path.resolve(process.cwd(), "public"),
     publicPath: "/"
   },
-  devtool: "cheap-module-eval-source-map",
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".json"]
+    modules: ["node_modules", "src"],
+    extensions: [".ts", ".tsx", ".js", ".json", ".css"]
   },
   module: {
     rules: [
@@ -21,6 +21,15 @@ module.exports = {
         use: [
           {
             loader: "ts-loader"
+          }
+        ]
+      },
+      {
+        test: /\.css/,
+        use: [
+          {
+            loader: "css-loader",
+            options: { url: false }
           }
         ]
       }

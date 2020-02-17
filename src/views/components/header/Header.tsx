@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Button } from 'react-bulma-components';
 
 export interface HeaderState {
   hoge: number;
@@ -22,7 +23,7 @@ class Header extends React.Component<any, HeaderState> {
       <div>
         <h1>Maaaaa {this.state.hoge}</h1>
         <h3>{this.state.piyo}</h3>
-        <button onClick={this.func}>ぼったんだよ</button>
+        <Button color="primary" onClick={this.func}>ぼったんだよ</Button>
       </div>
     );
   }
