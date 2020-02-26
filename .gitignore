@@ -104,4 +104,5 @@ public/js
 # TernJS port file
 .tern-port
 
-# 
+# sandbox
+sandbox

@@ -1,11 +1,13 @@
-const html = ({ header }: { header: string }) => `
+const html = ({ menu }: { menu: string }) => `
   <!DOCTYPE html>
   <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="./public/css/react-bulma-components.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/bulmaswatch.min.css">
     </head>
     <body style="margin:0">
-      <div id="header">${header}</div>
+      <div class="header">
+        <div id="menu">${menu}</div>      
+      </div>
     </body>
     <script src="./public/js/header.js" defer></script>
   </html>
