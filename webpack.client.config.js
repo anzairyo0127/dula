@@ -3,11 +3,11 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: {
-    header: "./src/views/components/header/index.tsx"
+    bundle: "./src/scripts/components/index.tsx"
   },
   output: {
     filename: "js/[name].js",
-    path: path.resolve(process.cwd(), "public"),
+    path: path.resolve(__dirname, "public"),
     publicPath: "/"
   },
   resolve: {
