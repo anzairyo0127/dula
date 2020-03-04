@@ -1,6 +1,9 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
 
-import Menu from "./menu/Menu";
+import SideCards from "./side_cards/sideCards"
+import Main from "./main/Main"
 
-ReactDom.hydrate(<Menu />, document.getElementById("menu"));
+const columns = document.getElementById("columns");
+
+ReactDom.hydrate([<SideCards />, <Main />], columns);
